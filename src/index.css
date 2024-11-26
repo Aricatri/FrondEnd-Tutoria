@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Configuración global */
+* {
+    font-family: 'Outfit', sans-serif; /* Añade un fallback */
+}
+
+/* Estilo para elementos activos */
+.active hr {
+    @apply block; /* Mantén esto si `block` es una clase válida de Tailwind */
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 740px) {
+    .active p {
+        @apply text-white bg-primary; /* Asegúrate de que `bg-primary` está configurado en tu Tailwind config */
+    }
+}
+
+/* Media query para pantallas medianas */
+@media (min-width: 640px) {
+    .container {
+        margin-left: 2% ;
+        margin-right: 2% ;
+    }
+}
+
+/* Estilo para la barra de desplazamiento */
+::-webkit-scrollbar {
+    display: none;
+}

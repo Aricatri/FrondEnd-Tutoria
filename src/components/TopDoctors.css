@@ -1,0 +1,113 @@
+/* Contenedor principal */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 4rem 0;
+  color: #262626;
+}
+
+/* Título y subtítulo */
+.title {
+  font-size: 1.875rem;
+  font-weight: 500;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 0.875rem;
+  width: 33%;
+  max-width: 600px;
+}
+
+/* Grid de doctores */
+.doctors-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding-top: 1.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .doctors-grid {
+      padding-left: 0;
+      padding-right: 0;
+  }
+}
+
+/* Tarjeta de doctor */
+.doctor-card {
+  border: 1px solid #c9d8ff;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.doctor-card:hover {
+  transform: translateY(-10px);
+}
+
+.doctor-image {
+  background-color: #eaefff;
+  width: 100%;
+}
+
+/* Información del doctor */
+.doctor-info {
+  padding: 1rem;
+}
+
+.availability {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.status-indicator {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+}
+
+.available .status-indicator {
+  background-color: #28a745;
+}
+
+.not-available .status-indicator {
+  background-color: #6c757d;
+}
+
+.available {
+  color: #28a745;
+}
+
+.not-available {
+  color: #6c757d;
+}
+
+.doctor-name {
+  color: #262626;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.doctor-speciality {
+  color: #5c5c5c;
+  font-size: 0.875rem;
+}
+
+/* Botón "more" */
+.more-button {
+  background-color: #eaefff;
+  color: #6c757d;
+  padding: 0.75rem 3rem;
+  border-radius: 9999px;
+  margin-top: 2.5rem;
+}

@@ -1,0 +1,101 @@
+.why-choose-us-title, .why-choose-us{
+  margin: 1%;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+/* Section title */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 2rem;
+  color: #333;
+}
+.highlight-text {
+  color: #0066cc;
+  font-weight: bold;
+}
+.highlight-text {
+  color: #4A4A4A;
+  font-weight: 600;
+}
+
+/* About content section */
+.about-content {
+  margin-top: 2.5rem;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 2.5rem;
+}
+
+.about-image {
+  flex-shrink: 0; /* Evitar que la imagen se reduzca */
+  width: 100%;
+  max-width: 400px; /* Tamaño máximo de la imagen */
+  border-radius: 8px; /* Bordes redondeados */
+}
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 60%; /* Proporción del espacio para el texto */
+  font-size: 1rem;
+  line-height: 1.6; /* Espaciado entre líneas */
+  color: #555;
+}
+
+.text-dark {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Why choose us section */
+.why-choose-us-title {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+.why-choose-us {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 5rem;
+}
+
+.why-option {
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  text-align: left;
+  font-size: 0.9375rem;
+  color: #555;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.why-option:hover {
+  background-color: #0066cc;
+  color: white;
+}
+/* Diseño responsive */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+    text-align: center; /* Centrar el texto */
+  }
+
+  .about-text {
+    width: 100%;
+  }
+
+  .about-image {
+    max-width: 100%; /* Imagen ajusta a ancho completo */
+  }
+}

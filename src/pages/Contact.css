@@ -1,0 +1,12 @@
+.background1{
+  background-color: antiquewhite;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+body {
+  margin: 0; /* Elimina cualquier margen predeterminado */
+  padding: 0; /* Elimina cualquier padding predeterminado */
+  width: 100vw; /* Ocupa todo el ancho de la pantalla */
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  background-color: rgb(216, 224, 204); /* Si deseas aplicar un color de fondo */
+}

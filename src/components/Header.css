@@ -1,0 +1,82 @@
+/* Contenedor principal */
+.header-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #5271ff; /* Color azul para cursos */
+  border-radius: 16px;
+  padding: 20px;
+  gap: 20px;
+}
+@media (min-width: 768px) {
+  .header-container {
+    flex-direction: row;
+    padding: 40px 60px;
+  }
+}
+
+/* Header Izquierdo */
+.header-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  color: white;
+  padding: 30px;
+}
+
+.header-left h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  .header-left h1 {
+    font-size: 2.5rem;
+  }
+  .header-description img{
+    width: 20px;
+  }
+}
+
+.header-description {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.header-description img {
+  width: 90px;
+  border-radius: 50%;
+}
+
+.header-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  color: #5271ff;
+  padding: 10px 20px;
+  border-radius: 24px;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.3s ease;
+}
+
+.header-button:hover {
+  transform: scale(1.05);
+}
+
+/* Header Derecho */
+.header-right {
+  flex: 1;
+}
+
+.header-right img {
+  width: 100%;
+  border-radius: 16px;
+}

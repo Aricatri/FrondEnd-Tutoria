@@ -1,0 +1,74 @@
+/* Contenedor Principal */
+.banner-container {
+  display: flex;
+  background-color: #1b1e30; /* Color del fondo */
+  border-radius: 12px;
+  padding: 20px;
+  margin: 40px 20px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap; /* Ajuste para pantallas pequeñas */
+}
+
+/* Lado Izquierdo - Texto */
+.banner-text {
+  flex: 1;
+  padding: 20px;
+  color: white;
+}
+
+.banner-title {
+  font-size: 1.5rem; /* Tamaño base */
+  font-weight: 600;
+}
+
+.banner-subtitle {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.banner-button {
+  margin-top: 20px;
+  background-color: white;
+  color: #595959;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.banner-button:hover {
+  transform: scale(1.05);
+}
+
+/* Lado Derecho - Imagen */
+.banner-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-image {
+  max-width: 30%;
+  height: auto;
+  border-radius: 8px; /* Opcional, si deseas bordes redondeados */
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .banner-container {
+    flex-direction: column; /* Cambia el diseño a columna */
+    text-align: center;
+  }
+
+  .banner-image-container {
+    margin-top: 20px;
+  }
+
+  .banner-image {
+    max-width: 80%; /* Ajusta el tamaño de la imagen */
+  }
+}
